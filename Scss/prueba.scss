@@ -1,0 +1,652 @@
+@import 'colores';
+body {
+    margin: 0 !important;
+    background-image: url(../Img/Fondo-new.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Cabecera-Menu*/
+
+header {
+    width: 83.9%;
+    height: 110px;
+    background-color: $color-negro;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+        animation-name: Logo;
+        animation-duration: 3s;
+    }
+    @keyframes Logo {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+}
+
+.menuNavegacion nav {
+    text-align: center;
+    padding: 3px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuNavegacion ul {
+    list-style: none;
+}
+
+.menuNavegacion a {
+    text-decoration: none;
+    color: $color-blanco;
+}
+
+.menuNavegacion a:hover {
+    text-decoration: none;
+    color: #00a29c;
+}
+
+.menuNavegacion>nav>ul>li {
+    display: inline-block;
+    font-size: 22px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    margin: 5px 15px 0px 15px;
+}
+
+.menuNavegacion>nav>ul>li>ul {
+    position: absolute;
+    display: none;
+}
+
+.menuNavegacion>nav>ul>li:hover ul {
+    display: block;
+    text-align: center;
+}
+
+.menuNavegacion>nav>ul>li>ul>li {
+    border: solid 1px;
+    border-color: #00a29c;
+    margin: 5px;
+    padding: 5px;
+    background-color: $color-negro;
+    margin-left: -48px;
+}
+
+
+/*Fin-Cabecera-Menu*/
+
+
+/*Seccion Vs*/
+
+.seccion__VSdeLaSemana {
+    display: flex;
+    justify-content: stretch;
+    margin: auto;
+    width: 84.5%;
+    height: 718px;
+    background-image: url(../Img/Plantilla-Versus.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Fin Seccion Vs*/
+
+
+/* Seccion Noticias*/
+
+.Fon__Noti {
+    width: 84%;
+    margin: auto;
+    h3 {
+        color: $color-blanco;
+        display: inline-block;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 30px;
+        margin: 35px 0px 0px 25px;
+        font-weight: 700;
+    }
+    .seccion__Noticias {
+        text-align: center;
+        display: grid;
+        grid-template-areas: "img1Noti Noti2 Noti4" "img1Noti Noti3 Noti5";
+        grid-row-gap: 7px;
+        grid-column-gap: 10px;
+        justify-items: center;
+        margin: 25px 0px 25px 0px;
+    }
+    .img1Noti {
+        background-image: url(../Img/Bob.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 580px;
+        height: 470px;
+        grid-area: img1Noti;
+        border-radius: 10px;
+        box-shadow: 2px 3px 3px 2px #e99b9b3a;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Noti {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: grey;
+        height: 228px;
+        width: 460px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        box-shadow: 2px 3px 3px 2px #e99b9b3a;
+    }
+    .Noti--2 {
+        background-image: url(../Img/Weekend.jpg);
+        grid-area: Noti2;
+    }
+    .Noti--3 {
+        margin-top: 7px;
+        background-image: url(../Img/calamaro.jpg);
+        grid-area: Noti3;
+    }
+    .Noti--4 {
+        background-image: url(../Img/calamaro.jpg);
+        grid-area: Noti4;
+    }
+    .Noti--5 {
+        margin-top: 7px;
+        background-image: url(../Img/calamaro.jpg);
+        grid-area: Noti5;
+    }
+    .Pr__Noti {
+        height: 70px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: #00a29dd3;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    span {
+        height: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3em;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        background-color: #00a29dd3;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+
+/*------------------Fin Seccion Noticias*/
+
+
+/*------------------------- Botones*/
+
+.prueba__sass {
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    width: 84%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    li {
+        width: 13%;
+        height: 89px;
+        background-color: rgb(22, 22, 22);
+        border-radius: 10px;
+        margin: 0px 5px 20px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: inset 5px #00a29c;
+    }
+    a {
+        color: white;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #00a29c;
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+}
+
+
+/*------------------ Seccion Video*/
+
+.seccion__Videos {
+    width: 84%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h3 {
+        color: #ffff;
+        display: inline-block;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 30px;
+        margin: 35px 0px 0px 25px;
+        font-weight: 700;
+    }
+    .contenedor {
+        margin: 40px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .vid1 {
+        background-color: #00a29c;
+        box-shadow: 2px 3px 3px 2px #e99b9b3a;
+        width: 44%;
+        height: 480px;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .TextVid {
+        margin-top: 5px;
+        color: #ffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+    .vid__2 {
+        width: 55%;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .vid2 {
+            background-color: #00a29c;
+            border-radius: 9px;
+            height: 225px;
+            padding: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 2px 3px 3px 2px #e99b9b3a;
+            p {
+                width: 50%;
+                color: #ffff;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 1.1em;
+                margin-left: 10px;
+                text-align: left;
+                padding: 5px 0px 10px 0px;
+            }
+        }
+    }
+    .vid3 {
+        background-color: #00a29c;
+        height: 225px;
+        border-radius: 9px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 2px 3px 3px 2px #e99b9b3a;
+    }
+    .TextLate {
+        width: 50%;
+        color: #ffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.1em;
+        margin-left: 10px;
+        text-align: left;
+        padding: 5px 0px 10px 0px;
+    }
+}
+
+
+/*------------------------- Fin Seccion Video*/
+
+
+/*------------------------- prueba Bootstrap*/
+
+.container--cambio {
+    width: 84%;
+    margin: auto;
+    h3 {
+        color: #ffff;
+        display: inline-block;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 30px;
+        margin: 35px 0px 35px 25px;
+        font-weight: 700;
+    }
+}
+
+.rojo {
+    background-color: none;
+    height: 300px;
+    margin: 0;
+}
+
+#despegable {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*--------------------------- Footer*/
+
+.seccion__Footer {
+    background-color: #000000;
+    border: 2px #00a29c;
+    border-style: inset;
+    border-bottom: none;
+    height: 150px;
+    width: 84%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    div>span {
+        color: white;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .Subscribete {
+        border-color: #00a29c;
+        background-color: #00a29c;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        font-size: 1rem;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    .Subscribete:hover {
+        border-color: rgb(255, 0, 0);
+        background-color: rgb(255, 0, 0);
+        color: white;
+    }
+    input {
+        background-color: black;
+        border-color: #00a29c;
+        font-family: 'Orbitron', sans-serif;
+        padding: 5px;
+        color: white;
+    }
+    .Proximamente {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 500px;
+        height: 50px;
+        .social-icons {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        .social-icons li {
+            display: inline;
+            margin-right: 2em;
+        }
+    }
+}
+
+
+/*Fin  Footer*/
+
+
+/*------------------------- Pagina Servicios*/
+
+main {
+    width: 70%;
+    height: 1000px;
+    margin: auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    h2 {
+        font-family: 'Orbitron', sans-serif;
+        color: white;
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
+
+.CajaServicio {
+    background-color: black;
+    width: 100%;
+    height: 280px;
+    display: flex;
+}
+
+.Servi {
+    background-color: #00a29c;
+    color: black;
+    width: 30%;
+    height: 280px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.Servi:hover {
+    background-color: black;
+    color: white;
+    border: #00a29c;
+    border-style: solid;
+}
+
+.Descrip {
+    display: inline-block;
+    width: 70%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.Descrip>span {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/*------------------------- Pagina About*/
+
+.quienes {
+    background-color: black;
+    width: 100%;
+    height: 410px;
+    display: flex;
+    align-items: center;
+}
+
+.somos {
+    width: 30%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.expli {
+    background-color: #00a29c;
+    width: 70%;
+    height: 410px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.expli>span {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.Int1 {
+    width: 100%;
+    height: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.integrante {
+    background-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.foto {
+    background-color: teal;
+    width: 100%;
+    height: 310px;
+    background-image: url(../Img/Per1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.foto2 {
+    background-color: teal;
+    width: 100%;
+    height: 310px;
+    background-image: url(../Img/Per2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.foto3 {
+    background-color: teal;
+    width: 100%;
+    height: 310px;
+    background-image: url(../Img/Per3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+/*------------------------- Pagina Contact*/
+
+.ContainForm {
+    width: 70%;
+    height: 770px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h4 {
+        color: white;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .formulario {
+        background-color: black;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+            background-color: black;
+            border-color: #00a29c;
+            font-family: 'Orbitron', sans-serif;
+            padding: 5px;
+            color: white;
+        }
+    }
+    div {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.4em;
+        text-align: center;
+        margin: 20px 10px 15px 10px;
+    }
+    textarea {
+        background-color: black;
+        border-color: #00a29c;
+        font-family: 'Orbitron', sans-serif;
+        padding: 5px;
+        color: white;
+    }
+    .envi {
+        border-color: #00a29c;
+        background-color: #00a29c;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        font-size: 1rem;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    .envi:hover {
+        border-color: rgb(255, 0, 0);
+        background-color: rgb(255, 0, 0);
+        color: white;
+    }
+    .divi {
+        margin: 5px 0 5px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: stretch;
+    }
+    .modi {
+        width: 330px;
+        margin-right: 7px;
+    }
+}
+
+
+/*------------------------- Metodologia BEM*/
