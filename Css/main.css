@@ -74,11 +74,18 @@ header {
   display: flex;
   justify-content: stretch;
   margin: auto;
-  width: 84.5%;
-  height: 718px;
-  background-image: url(../Img/Plantilla-Versus.png);
-  background-repeat: no-repeat;
-  background-position: center; }
+  width: 85%;
+  height: 718px; }
+  .seccion__VSdeLaSemana a {
+    width: 100%;
+    height: 718px; }
+  .seccion__VSdeLaSemana .Img__Vs {
+    margin: auto;
+    width: 99.5%;
+    height: 718px;
+    background-image: url(../Img/Plantilla-Versus.png);
+    background-repeat: no-repeat;
+    background-position: center; }
 
 /* Fin Seccion Vs*/
 /* Seccion Noticias*/
@@ -142,11 +149,14 @@ header {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5em;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     color: white;
     background-color: #00a29dd3;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; }
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .Fon__Noti span {
     height: 50px;
     font-family: 'Poppins', sans-serif;
@@ -155,7 +165,25 @@ header {
     color: white;
     background-color: #00a29dd3;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; }
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; }
+    .Fon__Noti span button {
+      width: 40px;
+      height: 35px;
+      margin: 2px;
+      border-radius: 30%;
+      background-color: black;
+      border-style: none;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9em;
+      font-weight: 300; }
+    .Fon__Noti span button:hover {
+      background-color: white;
+      color: black; }
 
 /*------------------Fin Seccion Noticias*/
 /*------------------------- Botones*/
@@ -239,33 +267,64 @@ header {
       align-items: center;
       justify-content: space-between;
       box-shadow: 2px 3px 3px 2px #e99b9b3a; }
-      .seccion__Videos .vid__2 .vid2 p {
-        width: 50%;
-        color: #ffff;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-size: 1.1em;
-        margin-left: 10px;
-        text-align: left;
-        padding: 5px 0px 10px 0px; }
-  .seccion__Videos .vid3 {
-    background-color: #00a29c;
-    height: 225px;
-    border-radius: 9px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 2px 3px 3px 2px #e99b9b3a; }
-  .seccion__Videos .TextLate {
-    width: 50%;
-    color: #ffff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1.1em;
-    margin-left: 10px;
-    text-align: left;
-    padding: 5px 0px 10px 0px; }
+      .seccion__Videos .vid__2 .vid2 #MinVid {
+        width: 45%; }
+      .seccion__Videos .vid__2 .vid2 div {
+        width: 53%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .seccion__Videos .vid__2 .vid2 div span {
+          color: #ffff;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+          margin-left: 10px;
+          font-size: 1.4em; }
+        .seccion__Videos .vid__2 .vid2 div p {
+          width: 90%;
+          color: #ffff;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          font-size: 1.1em;
+          text-align: left; }
+    .seccion__Videos .vid__2 .vid3 {
+      background-color: #00a29c;
+      height: 225px;
+      border-radius: 9px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 2px 3px 3px 2px #e99b9b3a; }
+      .seccion__Videos .vid__2 .vid3 #MinVid {
+        width: 45%; }
+      .seccion__Videos .vid__2 .vid3 div {
+        width: 53%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .seccion__Videos .vid__2 .vid3 div span {
+          color: #ffff;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+          margin-left: 10px;
+          font-size: 1.4em; }
+        .seccion__Videos .vid__2 .vid3 div p {
+          width: 90%;
+          color: #ffff;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          font-size: 1.1em;
+          text-align: left; }
+    .seccion__Videos .vid__2 .TextLate {
+      width: 50%;
+      color: #ffff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 1.1em;
+      margin-left: 10px;
+      text-align: left;
+      padding: 5px 0px 10px 0px; }
 
 /*------------------------- Fin Seccion Video*/
 /*------------------------- prueba Bootstrap*/

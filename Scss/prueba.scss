@@ -94,11 +94,20 @@ header {
     display: flex;
     justify-content: stretch;
     margin: auto;
-    width: 84.5%;
+    width: 85%;
     height: 718px;
-    background-image: url(../Img/Plantilla-Versus.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    a {
+        width: 100%;
+        height: 718px;
+    }
+    .Img__Vs {
+        margin: auto;
+        width: 99.5%;
+        height: 718px;
+        background-image: url(../Img/Plantilla-Versus.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 
@@ -175,11 +184,14 @@ header {
         font-family: 'Poppins', sans-serif;
         font-size: 1.5em;
         font-weight: 400;
-        text-align: center;
+        text-align: left;
         color: rgb(255, 255, 255);
         background-color: #00a29dd3;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     span {
         height: 50px;
@@ -190,6 +202,26 @@ header {
         background-color: #00a29dd3;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        button {
+            width: 40px;
+            height: 35px;
+            margin: 2px;
+            border-radius: 30%;
+            background-color: $color-negro;
+            border-style: none;
+            color: $color-blanco;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9em;
+            font-weight: 300;
+        }
+        button:hover {
+            background-color: $color-blanco;
+            color: $color-negro;
+        }
     }
 }
 
@@ -289,37 +321,75 @@ header {
             align-items: center;
             justify-content: space-between;
             box-shadow: 2px 3px 3px 2px #e99b9b3a;
-            p {
-                width: 50%;
-                color: #ffff;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
-                font-size: 1.1em;
-                margin-left: 10px;
-                text-align: left;
-                padding: 5px 0px 10px 0px;
+            #MinVid {
+                width: 45%;
+            }
+            div {
+                width: 53%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                span {
+                    color: #ffff;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    margin-left: 10px;
+                    font-size: 1.4em;
+                }
+                p {
+                    width: 90%;
+                    color: #ffff;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.1em;
+                    text-align: left;
+                }
             }
         }
-    }
-    .vid3 {
-        background-color: #00a29c;
-        height: 225px;
-        border-radius: 9px;
-        padding: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 2px 3px 3px 2px #e99b9b3a;
-    }
-    .TextLate {
-        width: 50%;
-        color: #ffff;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-size: 1.1em;
-        margin-left: 10px;
-        text-align: left;
-        padding: 5px 0px 10px 0px;
+        .vid3 {
+            background-color: #00a29c;
+            height: 225px;
+            border-radius: 9px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 2px 3px 3px 2px #e99b9b3a;
+            #MinVid {
+                width: 45%;
+            }
+            div {
+                width: 53%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                span {
+                    color: #ffff;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    margin-left: 10px;
+                    font-size: 1.4em;
+                }
+                p {
+                    width: 90%;
+                    color: #ffff;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.1em;
+                    text-align: left;
+                }
+            }
+        }
+        .TextLate {
+            width: 50%;
+            color: #ffff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 1.1em;
+            margin-left: 10px;
+            text-align: left;
+            padding: 5px 0px 10px 0px;
+        }
     }
 }
 
