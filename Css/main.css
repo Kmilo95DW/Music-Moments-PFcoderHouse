@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* Cabecera-Menu*/
+/*------------------Cabecera-Menu*/
 header {
   width: 83.9%;
   height: 110px;
@@ -13,63 +13,49 @@ header {
   align-items: center;
   justify-content: space-around;
   margin: auto; }
-  header h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    animation-name: Logo;
-    animation-duration: 3s; }
+  header a {
+    list-style: none;
+    text-decoration: none; }
+    header a h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: bold;
+      color: white;
+      font-size: 25px;
+      animation-name: Logo;
+      animation-duration: 3s; }
 
 @keyframes Logo {
   0% {
     opacity: 0%; }
   100% {
     opacity: 100%; } }
+  header nav ul li {
+    display: inline-block;
+    font-size: 22px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    margin: 5px 15px 0px 15px; }
+    header nav ul li a {
+      color: white; }
+    header nav ul li a:hover {
+      color: #00a29c; }
+    header nav ul li ul {
+      position: absolute;
+      display: none; }
+      header nav ul li ul li {
+        border: solid 1px;
+        border-color: #00a29c;
+        margin: 5px;
+        padding: 5px;
+        background-color: black;
+        margin-left: -48px;
+        display: block; }
+  header nav ul li:hover ul {
+    display: block;
+    text-align: center; }
 
-.menuNavegacion nav {
-  text-align: center;
-  padding: 3px;
-  display: flex;
-  justify-content: flex-end; }
-
-.menuNavegacion ul {
-  list-style: none; }
-
-.menuNavegacion a {
-  text-decoration: none;
-  color: white; }
-
-.menuNavegacion a:hover {
-  text-decoration: none;
-  color: #00a29c; }
-
-.menuNavegacion > nav > ul > li {
-  display: inline-block;
-  font-size: 22px;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  margin: 5px 15px 0px 15px; }
-
-.menuNavegacion > nav > ul > li > ul {
-  position: absolute;
-  display: none; }
-
-.menuNavegacion > nav > ul > li:hover ul {
-  display: block;
-  text-align: center; }
-
-.menuNavegacion > nav > ul > li > ul > li {
-  border: solid 1px;
-  border-color: #00a29c;
-  margin: 5px;
-  padding: 5px;
-  background-color: black;
-  margin-left: -48px; }
-
-/*Fin-Cabecera-Menu*/
-/*Seccion Vs*/
+/*-----------------Fin-Cabecera-Menu*/
+/*------------------Seccion Vs*/
 .seccion__VSdeLaSemana {
   display: flex;
   justify-content: stretch;
@@ -78,17 +64,17 @@ header {
   height: 718px; }
   .seccion__VSdeLaSemana a {
     width: 100%;
-    height: 718px; }
+    height: 718px;
+    display: flex; }
   .seccion__VSdeLaSemana .Img__Vs {
     margin: auto;
-    width: 99.5%;
+    width: 99.2%;
     height: 718px;
     background-image: url(../Img/Plantilla-Versus.png);
     background-repeat: no-repeat;
-    background-position: center; }
+    background-size: contain; }
 
-/* Fin Seccion Vs*/
-/* Seccion Noticias*/
+/*---------------- Seccion Noticias*/
 .Fon__Noti {
   width: 84%;
   margin: auto; }
@@ -112,7 +98,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 580px;
+    width: 98%;
     height: 470px;
     grid-area: img1Noti;
     border-radius: 10px;
@@ -125,7 +111,7 @@ header {
     background-position: center;
     background-color: grey;
     height: 228px;
-    width: 460px;
+    width: 98%;
     border-radius: 10px;
     display: flex;
     flex-direction: column-reverse;
@@ -147,7 +133,7 @@ header {
   .Fon__Noti .Pr__Noti {
     height: 70px;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 400;
     text-align: left;
     color: white;
@@ -160,7 +146,7 @@ header {
   .Fon__Noti span {
     height: 50px;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 400;
     color: white;
     background-color: #00a29dd3;
@@ -172,14 +158,14 @@ header {
     padding: 10px; }
     .Fon__Noti span button {
       width: 40px;
-      height: 35px;
+      height: 33px;
       margin: 2px;
       border-radius: 30%;
       background-color: black;
       border-style: none;
       color: white;
       font-family: 'Poppins', sans-serif;
-      font-size: 0.9em;
+      font-size: 0.7em;
       font-weight: 300; }
     .Fon__Noti span button:hover {
       background-color: white;
@@ -219,7 +205,7 @@ header {
 
 /*------------------ Seccion Video*/
 .seccion__Videos {
-  width: 84%;
+  width: 85%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px; }
@@ -268,7 +254,8 @@ header {
       justify-content: space-between;
       box-shadow: 2px 3px 3px 2px #e99b9b3a; }
       .seccion__Videos .vid__2 .vid2 #MinVid {
-        width: 45%; }
+        width: 45%;
+        height: 100%; }
       .seccion__Videos .vid__2 .vid2 div {
         width: 53%;
         display: flex;
@@ -297,7 +284,8 @@ header {
       justify-content: space-between;
       box-shadow: 2px 3px 3px 2px #e99b9b3a; }
       .seccion__Videos .vid__2 .vid3 #MinVid {
-        width: 45%; }
+        width: 45%;
+        height: 100%; }
       .seccion__Videos .vid__2 .vid3 div {
         width: 53%;
         display: flex;
@@ -327,7 +315,7 @@ header {
       padding: 5px 0px 10px 0px; }
 
 /*------------------------- Fin Seccion Video*/
-/*------------------------- prueba Bootstrap*/
+/*-------------------------Bootstrap Lista*/
 .container--cambio {
   width: 84%;
   margin: auto; }
@@ -338,15 +326,10 @@ header {
     font-size: 30px;
     margin: 35px 0px 35px 25px;
     font-weight: 700; }
-
-.rojo {
-  background-color: none;
-  height: 300px;
-  margin: 0; }
-
-#despegable {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  .container--cambio .rojo {
+    background-color: none;
+    height: 300px;
+    margin: 0; }
 
 /*--------------------------- Footer*/
 .seccion__Footer {
@@ -400,7 +383,7 @@ header {
       display: inline;
       margin-right: 2em; }
 
-/*Fin  Footer*/
+/*----------------Fin  Footer*/
 /*------------------------- Pagina Servicios*/
 main {
   width: 70%;
@@ -415,45 +398,40 @@ main {
     color: white;
     font-size: 2em;
     font-weight: 700; }
-
-.CajaServicio {
-  background-color: black;
-  width: 100%;
-  height: 280px;
-  display: flex; }
-
-.Servi {
-  background-color: #00a29c;
-  color: black;
-  width: 30%;
-  height: 280px;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.5em;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  align-items: center; }
-
-.Servi:hover {
-  background-color: black;
-  color: white;
-  border: #00a29c;
-  border-style: solid; }
-
-.Descrip {
-  display: inline-block;
-  width: 70%;
-  color: white;
-  display: flex;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 1.3em;
-  text-align: center; }
-
-.Descrip > span {
-  margin-left: 20px;
-  margin-right: 20px; }
+  main .CajaServicio {
+    background-color: black;
+    width: 100%;
+    height: 280px;
+    display: flex; }
+  main .Servi {
+    background-color: #00a29c;
+    color: black;
+    width: 30%;
+    height: 280px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center; }
+  main .Servi:hover {
+    background-color: black;
+    color: white;
+    border: #00a29c;
+    border-style: solid; }
+  main .Descrip {
+    display: inline-block;
+    width: 70%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: center; }
+  main .Descrip > span {
+    margin-left: 20px;
+    margin-right: 20px; }
 
 /*------------------------- Pagina About*/
 .quienes {
@@ -462,29 +440,26 @@ main {
   height: 410px;
   display: flex;
   align-items: center; }
-
-.somos {
-  width: 30%;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.8em;
-  font-weight: 700;
-  color: white;
-  text-align: center; }
-
-.expli {
-  background-color: #00a29c;
-  width: 70%;
-  height: 410px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 1.2em;
-  display: flex;
-  align-items: center; }
-
-.expli > span {
-  margin-left: 35px;
-  margin-right: 35px; }
+  .quienes .somos {
+    width: 30%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: white;
+    text-align: center; }
+  .quienes .expli {
+    background-color: #00a29c;
+    width: 70%;
+    height: 410px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center; }
+    .quienes .expli span {
+      margin-left: 35px;
+      margin-right: 35px; }
 
 .Int1 {
   width: 100%;
@@ -492,49 +467,48 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-
-.integrante {
-  background-color: black;
-  width: 30%;
-  height: 390px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  font-size: 1.5em; }
-
-.foto {
-  background-color: teal;
-  width: 100%;
-  height: 310px;
-  background-image: url(../Img/Per1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px; }
-
-.foto2 {
-  background-color: teal;
-  width: 100%;
-  height: 310px;
-  background-image: url(../Img/Per2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px; }
-
-.foto3 {
-  background-color: teal;
-  width: 100%;
-  height: 310px;
-  background-image: url(../Img/Per3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px; }
+  .Int1 .integrante {
+    background-color: black;
+    width: 30%;
+    height: 390px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em; }
+  .Int1 .foto {
+    background-color: teal;
+    width: 100%;
+    height: 310px;
+    background-image: url(../Img/Per1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; }
+  .Int1 .foto2 {
+    background-color: teal;
+    width: 100%;
+    height: 310px;
+    background-image: url(../Img/Per2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; }
+  .Int1 .foto3 {
+    background-color: teal;
+    width: 100%;
+    height: 310px;
+    background-image: url(../Img/Per3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; }
+  .Int1 span {
+    margin-bottom: 30px; }
 
 /*------------------------- Pagina Contact*/
 .ContainForm {
@@ -570,6 +544,8 @@ main {
     text-align: center;
     margin: 20px 10px 15px 10px; }
   .ContainForm textarea {
+    width: 97%;
+    height: 200px;
     background-color: black;
     border-color: #00a29c;
     font-family: 'Orbitron', sans-serif;
@@ -599,4 +575,566 @@ main {
     width: 330px;
     margin-right: 7px; }
 
-/*------------------------- Metodologia BEM*/
+/*------------------------- Media Queries*/
+@media screen and (max-width: 970px) {
+  header a h1 {
+    font-size: 1.1em; }
+  header nav ul li {
+    display: inline-block;
+    font-size: 0.9em; }
+  .seccion__VSdeLaSemana {
+    width: 85%;
+    height: 375px; }
+    .seccion__VSdeLaSemana a {
+      width: 100%;
+      height: 375px; }
+    .seccion__VSdeLaSemana .Img__Vs {
+      width: 99.2%;
+      height: 375px; }
+  .Fon__Noti h3 {
+    margin-left: 0px;
+    font-size: 1.4em; }
+  .Fon__Noti .img1Noti {
+    width: 98%;
+    height: 350px; }
+  .Fon__Noti .Noti {
+    height: 165px;
+    width: 98%; }
+  .Fon__Noti .Pr__Noti {
+    height: 60px;
+    font-size: 0.9em; }
+  .Fon__Noti span {
+    height: 40px;
+    font-size: 0.9em; }
+    .Fon__Noti span button {
+      width: 37px;
+      height: 31px;
+      font-size: 0.8em; }
+  .prueba__sass {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    width: 84%;
+    height: 90px; }
+    .prueba__sass li {
+      width: 15%;
+      height: 60px; }
+    .prueba__sass a {
+      font-size: 0.9em; }
+    .prueba__sass a:hover {
+      font-size: 1em; }
+  .seccion__Videos h3 {
+    margin-left: 0px;
+    font-size: 1.4em; }
+  .seccion__Videos .TextVid {
+    margin-top: 3px;
+    font-size: 1em; }
+  .seccion__Videos .vid__2 .vid2 div span {
+    font-size: 1em; }
+  .seccion__Videos .vid__2 .vid2 div p {
+    font-size: 0.9em;
+    text-align: left; }
+  .seccion__Videos .vid__2 .vid3 div span {
+    font-size: 1em; }
+  .seccion__Videos .vid__2 .vid3 div p {
+    font-size: 0.9em;
+    text-align: left; }
+  .container--cambio h3 {
+    font-size: 1.4em;
+    margin-left: 0px; }
+  .seccion__Footer {
+    justify-content: space-around; }
+    .seccion__Footer .Inscribete {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .seccion__Footer .Inscribete span {
+        color: white;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        margin-bottom: 15px; }
+      .seccion__Footer .Inscribete .Subscribete {
+        font-size: 0.9em;
+        margin-top: 20px;
+        margin-left: 15px; }
+      .seccion__Footer .Inscribete input {
+        padding: 3px;
+        color: white;
+        font-size: 0.8em; }
+  /*-------------------Pagina Servicios*/
+  main {
+    width: 75%;
+    height: 850px; }
+    main h2 {
+      font-size: 1.4em;
+      font-weight: 700; }
+    main .CajaServicio {
+      width: 100%;
+      height: 220px;
+      display: flex; }
+    main .Servi {
+      width: 30%;
+      height: 220px;
+      font-size: 1.5em; }
+    main .Descrip {
+      font-size: 1em;
+      text-align: center; }
+  /*-------------------Pagina About*/
+  .quienes {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    align-items: center; }
+    .quienes .somos {
+      width: 30%;
+      font-size: 1.2em; }
+    .quienes .expli {
+      width: 70%;
+      height: 290px;
+      font-size: 1em; }
+      .quienes .expli span {
+        margin-left: 35px;
+        margin-right: 35px; }
+  .Int1 {
+    width: 100%;
+    height: 330px; }
+    .Int1 .integrante {
+      background-color: black;
+      width: 30%;
+      height: 320px;
+      font-size: 1em; }
+    .Int1 .foto {
+      background-color: teal;
+      width: 100%;
+      height: 280px;
+      background-position: center; }
+    .Int1 .foto2 {
+      width: 100%;
+      height: 280px;
+      background-position: center; }
+    .Int1 .foto3 {
+      width: 100%;
+      height: 280px;
+      background-position: center; }
+    .Int1 span {
+      margin-bottom: 30px; }
+  /*-------------------Pagina Contact*/
+  .ContainForm {
+    width: 75%;
+    height: 650px; }
+    .ContainForm h4 {
+      font-size: 1.2em; }
+    .ContainForm .formulario {
+      width: 100%;
+      height: 500px; }
+      .ContainForm .formulario input {
+        background-color: black;
+        border-color: #00a29c;
+        font-family: 'Orbitron', sans-serif;
+        padding: 5px;
+        color: white; }
+    .ContainForm div {
+      font-size: 1em; }
+    .ContainForm form {
+      margin: auto;
+      margin-left: 35px; }
+    .ContainForm textarea {
+      width: 68%;
+      height: 170px;
+      padding: 3px;
+      color: white; }
+    .ContainForm .envi {
+      font-size: 0.8em;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      margin-left: 15px; }
+    .ContainForm .divi {
+      width: 70%;
+      margin: 5px 0 5px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: stretch;
+      align-items: center; }
+    .ContainForm .modi {
+      width: 330px;
+      margin-right: 7px; } }
+
+/*------------------------- Media Queries Movil*/
+@media screen and (max-width: 370px) {
+  header {
+    width: 95%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row-reverse; }
+    header a h1 {
+      font-size: 0.8em; }
+    header nav {
+      width: 90%; }
+      header nav ul li {
+        display: block;
+        font-size: 0.8em; }
+        header nav ul li ul {
+          background-color: none; }
+          header nav ul li ul li {
+            margin-left: 0px;
+            font-size: 0.8em; }
+  .seccion__VSdeLaSemana {
+    width: 95%;
+    height: 155px; }
+    .seccion__VSdeLaSemana a {
+      width: 100%;
+      height: 155px; }
+    .seccion__VSdeLaSemana .Img__Vs {
+      width: 99%;
+      height: 155px; }
+  .Fon__Noti {
+    width: 90%; }
+    .Fon__Noti h3 {
+      margin-left: 0px;
+      font-size: 1em; }
+    .Fon__Noti .seccion__Noticias {
+      text-align: center;
+      display: grid;
+      grid-template-areas: "img1Noti img1Noti" "Noti2 Noti3 " "Noti4 Noti5 ";
+      justify-items: center;
+      margin: 10px 0px 10px 0px; }
+    .Fon__Noti .img1Noti {
+      background-image: url(../Img/Bob.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 98%;
+      height: 220px;
+      grid-area: img1Noti; }
+    .Fon__Noti .Noti {
+      height: 115px;
+      width: 98%; }
+    .Fon__Noti .Noti--2 {
+      background-image: url(../Img/Weekend.jpg);
+      grid-area: Noti2; }
+    .Fon__Noti .Noti--3 {
+      background-image: url(../Img/calamaro.jpg);
+      grid-area: Noti3;
+      margin-top: 0px; }
+    .Fon__Noti .Noti--4 {
+      background-image: url(../Img/calamaro.jpg);
+      grid-area: Noti4; }
+    .Fon__Noti .Noti--5 {
+      background-image: url(../Img/calamaro.jpg);
+      grid-area: Noti5;
+      margin-top: 0px; }
+    .Fon__Noti .Pr__Noti {
+      height: 60px;
+      font-size: 0.8em; }
+    .Fon__Noti span {
+      height: 50px;
+      font-size: 0.7em;
+      padding: 3px; }
+      .Fon__Noti span button {
+        width: 35px;
+        height: 34px;
+        margin: 1px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.7em; }
+  .prueba__sass {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 94%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around; }
+    .prueba__sass li {
+      width: 37%;
+      height: 55px;
+      background-color: #161616;
+      border-radius: 10px;
+      margin: 0px 5px 20px 5px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+    .prueba__sass a {
+      font-size: 0.8em; }
+    .prueba__sass a:hover {
+      font-size: 0.9em; }
+  .seccion__Videos {
+    width: 94%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 8vh; }
+    .seccion__Videos h3 {
+      font-size: 1em;
+      margin: 35px 0px 0px 0px; }
+    .seccion__Videos .contenedor {
+      margin: 20px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .seccion__Videos .vid1 {
+      width: 95%;
+      height: 270px;
+      padding: 6px;
+      margin-bottom: 10px; }
+    .seccion__Videos .TextVid {
+      margin-top: 2px;
+      font-size: 0.9em; }
+    .seccion__Videos .vid__2 {
+      width: 95%;
+      height: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .seccion__Videos .vid__2 .vid2 {
+        height: 300px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 3vh; }
+        .seccion__Videos .vid__2 .vid2 #MinVid {
+          width: 97%;
+          height: 100%; }
+        .seccion__Videos .vid__2 .vid2 div {
+          width: 97%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          .seccion__Videos .vid__2 .vid2 div span {
+            margin-left: 10px;
+            font-size: 0.9em; }
+          .seccion__Videos .vid__2 .vid2 div p {
+            width: 90%;
+            font-size: 0.8em;
+            text-align: left; }
+      .seccion__Videos .vid__2 .vid3 {
+        height: 300px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 3vh; }
+        .seccion__Videos .vid__2 .vid3 #MinVid {
+          width: 97%;
+          height: 100%; }
+        .seccion__Videos .vid__2 .vid3 div {
+          width: 97%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          .seccion__Videos .vid__2 .vid3 div span {
+            margin-left: 10px;
+            font-size: 0.9em; }
+          .seccion__Videos .vid__2 .vid3 div p {
+            width: 90%;
+            font-size: 0.8em;
+            text-align: left; }
+  .container--cambio {
+    width: 94%;
+    margin: auto; }
+    .container--cambio h3 {
+      font-size: 1em;
+      margin: 20px 0px 20px 0px;
+      font-weight: 700; }
+    .container--cambio .rojo {
+      background-color: none;
+      height: 300px;
+      margin: 0; }
+  .seccion__Footer {
+    border-bottom: none;
+    height: 230px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .seccion__Footer .Inscribete {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .seccion__Footer .Inscribete span {
+        color: white;
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 10px; }
+      .seccion__Footer .Inscribete .Subscribete {
+        width: 70%;
+        border-radius: 0.2rem;
+        font-size: 1em;
+        margin-left: 35px; }
+      .seccion__Footer .Inscribete input {
+        width: 100%;
+        padding: 5px;
+        color: white; }
+    .seccion__Footer .Proximamente {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 500px;
+      height: 50px; }
+      .seccion__Footer .Proximamente .social-icons {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row; }
+      .seccion__Footer .Proximamente .social-icons li {
+        display: inline;
+        margin-right: 2em; }
+  /*------------------------- Pagina Servicios*/
+  main {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    main h2 {
+      font-size: 1em;
+      font-weight: 700; }
+    main .CajaServicio {
+      width: 100%;
+      height: 230px;
+      display: flex;
+      flex-direction: column; }
+    main .Servi {
+      width: 100%;
+      height: 45px;
+      font-size: 0.9em;
+      font-weight: 700;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    main .Descrip {
+      display: inline-block;
+      width: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      font-size: 0.8em;
+      text-align: center; }
+    main .Descrip > span {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px; }
+  /*------------------------- Pagina About*/
+  .quienes {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px; }
+    .quienes .somos {
+      width: 100%;
+      height: 13%;
+      font-size: 1em;
+      text-align: center;
+      display: flex;
+      justify-content: center; }
+    .quienes .expli {
+      width: 100%;
+      height: 850%;
+      text-align: center;
+      font-size: 0.8em;
+      display: flex;
+      align-items: center; }
+      .quienes .expli span {
+        margin-left: 10px;
+        margin-right: 10px; }
+  .Int1 {
+    width: 100%;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; }
+    .Int1 .integrante {
+      width: 61%;
+      height: 150px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      font-size: 1em; }
+    .Int1 .foto {
+      background-color: teal;
+      width: 100%;
+      height: 200px;
+      background-image: url(../Img/Per1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      margin-bottom: 2px; }
+    .Int1 .foto2 {
+      background-color: teal;
+      width: 100%;
+      height: 200px;
+      background-image: url(../Img/Per2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      margin-bottom: 2px; }
+    .Int1 .foto3 {
+      background-color: teal;
+      width: 100%;
+      height: 200px;
+      background-image: url(../Img/Per3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      margin-bottom: 2px; }
+    .Int1 span {
+      margin-bottom: 10px; }
+  /*-------------------Pagina Contact*/
+  .ContainForm {
+    width: 90%;
+    height: 500px; }
+    .ContainForm h4 {
+      font-size: 1em; }
+    .ContainForm .formulario {
+      width: 100%;
+      height: 490px; }
+      .ContainForm .formulario input {
+        background-color: black;
+        border-color: #00a29c;
+        font-family: 'Orbitron', sans-serif;
+        padding: 5px;
+        color: white; }
+    .ContainForm div {
+      font-size: 0.9em; }
+    .ContainForm form {
+      margin: auto; }
+    .ContainForm textarea {
+      width: 90%;
+      height: 170px;
+      padding: 3px;
+      color: white; }
+    .ContainForm .envi {
+      font-size: 0.8em;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      margin-left: 15px; }
+    .ContainForm .divi {
+      width: 90%;
+      margin: 5px 0px 5px 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .ContainForm .modi {
+      margin-bottom: 3px;
+      width: 100%;
+      margin-right: 7px; } }
